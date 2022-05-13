@@ -7,50 +7,80 @@ header ul {
 }
 
 #hamburger {
-  
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
-#hamburger span:first-child {
+#hamburger > div {
   border: 2px solid #000;
+  width: 34px;
+  height: 32px;
 }
 
-#hamburger span:first-child span {
-  border-bottom: 2px solid #000;
-  width: 2em;
-  margin: 1em;
+#hamburger div span {
+  border-bottom: 3px solid #000;
+  width: 34px;
+  height: 1px;
+  display: block;
+  margin: 4.5px 0 ;
 }
 
 #navigation ul {
-  flex-wrap: wrap;
+  display: block;
+  position: fixed;
+  top: 5em;
+  right: 1em;
 }
 
 .hide {
-
+  display: none;
 }
 
 .show {
   display: block;
 }
 
-h1.typewriter {
+h1.typewriter, h2.typewriter {
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .1em;
+}
+
+h1.typewriter {
   animation: 
-    typing 3.5s steps(16, end),
+    typing 3s steps(16, end),
     blink-caret .75s step-end infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+h2.typewriter {
+  color: transparent;
+  animation: 
+    typing 6s steps(20, end),
+    blink-caret .75s step-end infinite;
+    animation-delay: 3s;
 }
 
-/* The typewriter cursor effect */
+@keyframes typing {
+  from { 
+    width: 0;
+  }
+  to { 
+    width: 100%;
+  }
+}
+
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  from, to { 
+    border-color: transparent;
+    color: #000; 
+  }
+  50% { 
+    border-color: orange;
+    color: #000;  
+  }
 }

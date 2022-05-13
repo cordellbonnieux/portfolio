@@ -6,20 +6,20 @@ export default function Header() {
                     <h1 className="typewriter">
                         Cordell Bonnieux
                     </h1>
-                    <h2>
+                    <h2 className="typewriter">
                         Developer Portfolio
                     </h2>
                 </li>
                 <li id="navigation">
                     <nav>
                     <div id="hamburger">
-                        <span>
+                        <div>
                         <span></span>
                         <span></span>
                         <span></span>
-                        </span>
+                        </div>
                     </div>
-                    <ul>
+                    <ul className="hide">
                         <li>
                         <a href="#">Bio</a>
                         </li>
