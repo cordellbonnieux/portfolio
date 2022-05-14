@@ -1,15 +1,14 @@
 import Header from './Header'
-import './App.css';
+import Main from './Main'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main>
-
-      </main>
+      <Main />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
