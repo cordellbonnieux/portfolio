@@ -1,6 +1,7 @@
 /*
 *  Header
 */
+
 header ul {
   padding: 0;
   margin: 0;
@@ -86,4 +87,16 @@ h2.typewriter {
     border-color: orange;
     color: #000;  
   }
+}
+
+/*
+* Main
+*/
+
+/*
+* Footer
+*/
+
+footer {
+  text-align: center;
 }
