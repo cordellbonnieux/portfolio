@@ -1,5 +1,5 @@
 import React from 'react'
-import Bio from './Bio'
+import Page from './Page'
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -8,12 +8,9 @@ export default class Main extends React.Component {
     }
     render () {
         switch(this.state.page) {
-            case 'bio': return <main><Bio /></main>
-                break
+            case 'bio': return <main><Page section="bio" /></main>
             case 'projects': return <main></main>
-                break
             case 'contact': return <main></main>
-                break
             default: return <main></main>
         }
     }
