@@ -1,3 +1,4 @@
+// TODO: Destructure props
 export default function Item(props) {
     let classes = ''
     let img, t, p, list
@@ -24,8 +25,8 @@ export default function Item(props) {
             classes.length > 1 ? classes += ' text' : classes += 'text'
         }
         let listItems = []
-        props.items.forEach((item, index) => {
-            listItems.append(<li>{item}</li>)
+        props.list.items.forEach((item, index) => {
+            listItems.push(<li key={props.list}>{item}</li>)
         })
         list = (
             <div className="list">
