@@ -5,36 +5,45 @@ export default function Item(props) {
     if (props.img) {
         classes.length > 1 ? classes += ' img' : classes += 'img'
         img = <img src={props.img} alt={title} />
+    } else {
+        img = <></>
     }
     if (props.title) {
         t = <h2>{props.title}</h2>
+    } else {
+        t = <></>
     }
     if (props.p) {
         classes.length > 1 ? classes += ' text' : classes += 'text'
         p = <p>{props.p}</p>
+    } else {
+        p = <></>
     }
     if (props.list) {
         if (!classes.includes('text')) {
             classes.length > 1 ? classes += ' text' : classes += 'text'
         }
-        // THIS NEEDS TO BE BROKEN DOWN INTO A COMPONENT
-        let listItems 
+        let listItems = []
         props.items.forEach((item, index) => {
-            listItems += <li>{item}</li> // CANT DO THIS
+            listItems.append(<li>{item}</li>)
         })
         list = (
-            <figure className={classes}>
+            <div className="list">
                 <h4>{props.list.title}</h4>
                 <ul>
                     {listItems}
                 </ul>
-            </figure>
+            </div>
         )
+    } else {
+        list = <></>
     }
     return (
-        {img}
-        //{t}
-        //{p}
-        //{list}
+        <figure className={classes}>
+            {img}
+            {t}
+            {p}
+            {list}
+        </figure>
     )
 }
