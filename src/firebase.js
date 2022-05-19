@@ -30,9 +30,9 @@ const analytics = getAnalytics(app)
 const database = getFirestore(app)
 
 // get the collection
-const colRef = collection(database, 'test')
+const colRef = collection(database, 'data')
 
-// get collection data
+// get collection data and store objects in an array
 let data = []
 getDocs(colRef).then((collectionSnapShot) => {
     collectionSnapShot.docs.forEach((doc) => {
@@ -45,4 +45,5 @@ getDocs(colRef).then((collectionSnapShot) => {
     console.log(error.message)
 })
 
+// export the array of data objects
 export default data;
