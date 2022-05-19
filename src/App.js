@@ -7,11 +7,13 @@ import data from './firebase'
 function App() {
   //console.log(data)
   //console.log(data[0])
-  const { h1, h2, id } = data
-  console.log(h1, h2, id)
+  //const [ h1, h2, id ] = {...data[0] }
+  //console.log(h1, h2, id)
+  // add below <Header h1={h1} h2={h2} id={id}/>
+  // add below <Main />
   return (
     <div className="App">
-      <Header h1={h1} h2={h2} id={id}/>
+      
 
       <Footer />
     </div>
