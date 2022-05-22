@@ -1,13 +1,8 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
 import { getAnalytics } from 'firebase/analytics'
 import { getDatabase } from 'firebase/database'
 import { getFirestore, collection, getDocs } from 'firebase/firestore'
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: 'AIzaSyDgUSE9htjY1mD-WD1lXfV-I-UAtPnmuR4',
   authDomain: 'portfolio-35cbe.firebaseapp.com',
@@ -21,37 +16,30 @@ const firebaseConfig = {
 
 // Initialize Firebase
 let app = initializeApp(firebaseConfig)
-/*
-where do i import firebase from?
-if (!firebase.apps.length) {
-    app = initializeApp(firebaseConfig)
-} else {
-    app = firebase.app()
-}
-*/
 
 // get analytics
 const analytics = getAnalytics(app)
 
 // get database
-//const database = getDatabase(app)
 const database = getFirestore(app)
 
-// get the collection
-const colRef = collection(database, 'data')
-
 // get collection data and store objects in an array
-let data = []
-getDocs(colRef).then((collectionSnapShot) => {
-    collectionSnapShot.docs.forEach((doc) => {
-        data.push({
-            ...doc.data(),
-            id: doc.id
-        })
+async function getData(db) {
+    const colRef = collection(db, 'data')
+    const snapShot = await getDocs(colRef)
+    let pageData = []
+    snapShot.forEach(document => {
+        pageData.push(document.data())
     })
-}).catch(error => {
-    console.log(error.message)
-})
+    /*
+    snapShot.forEach(doc => {
+        console.log(doc.id, doc.data())
+    })
+    const d = snapShot.docs.map(doc => doc.data())
+    */
+    return pageData
+}
+const data = getData(database)
 
 // export the array of data objects
 export default data;

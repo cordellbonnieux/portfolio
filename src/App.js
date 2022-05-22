@@ -5,7 +5,7 @@ import './App.css'
 import data from './firebase'
 
 function App() {
-  //console.log(data)
+  console.log(data)
   //console.log(data[0])
   //const [ h1, h2, id ] = {...data[0] }
   //console.log(h1, h2, id)
