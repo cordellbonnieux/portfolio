@@ -2,54 +2,140 @@
     "page": "projects",
     "items": [
         {
-            "title": "",
-            "text": "",
+            "title": "Asteroid Blaster",
+            "text": "This is a twin-stick shooter web-browser based game, where the user pilots a space craft which must traverse through an asteroid field. The game has three difficulties and will keep track of your ship durability, score and time survived.",
             "image": "",
+            "link": "https://cordellbonnieux.github.io/CPSC2130_Lab3/",
             "list": {
-                "title": "",
+                "title": "Tech",
                 "items": [
-                    "",
-                    "",
-                    ""
+                    "JavaScript",
+                    "Canvas API",
+                    "HTML",
+                    "CSS"
                 ]
             }
         },
         {
-            "title": "",
-            "text": "",
+            "title": "Have A Good Laugh",
+            "text": "Website for local music festival, containing ticket sales portal, videos, images along with some nice animations.",
             "image": "",
+            "link": "https://haveagoodlaugh.org/",
             "list": {
-                "title": "",
+                "title": "Tech",
                 "items": [
-                    "",
-                    "",
-                    ""
+                    "JavaScript",
+                    "React.js",
+                    "Webpack",
+                    "Express.js (for testing)",
+                    "JSX",
+                    "CSS"
                 ]
             }
         },
         {
-            "title": "",
-            "text": "",
+            "title": "Audiopile",
+            "text": "E-commerce website for local record store, containing thousands of items and a customized organizational system. The site back-end also features real-time synching with store inventory, and automated tax system.",
             "image": "",
+            "link": "https://audiopile.ca/",
             "list": {
-                "title": "",
+                "title": "Tech",
                 "items": [
-                    "",
-                    "",
-                    ""
+                    "Wordpress",
+                    "WooCommerce",
+                    "PHP",
+                    "JavaScript",
+                    "HTML",
+                    "CSS (Bootstrap)",
+                    "QuickBooks",
+                    "Square"
                 ]
             }
         },
         {
-            "title": "",
-            "text": "",
+            "title": "Weather App",
+            "text": "A web application which allows you to retrieve the weather from any city in the world, along with that it will retrieve a nice image of said city.",
             "image": "",
+            "link": "https://cordellbonnieux.github.io/Weather-App/dist/",
+            "list": {
+                "title": "Tech",
+                "items": [
+                    "JavaScript",
+                    "HTML",
+                    "CSS",
+                    "REST APIs",
+                    "Node.js",
+                    "Express (for testing)",
+                    "Webpack"
+                ]
+            }
+        },
+        {
+            "title": "Tic-Tac-Toe",
+            "text": "Classic game of tic-tac-toe, browser-based game.",
+            "image": "",
+            "link": "https://cordellbonnieux.github.io/tic-tac-toe/",
+            "list": {
+                "title": "Tech",
+                "items": [
+                    "JavaScript",
+                    "HTML",
+                    "CSS"
+                ]
+            }
+        },
+        {
+            "title": "Bouncy Ball",
+            "text": "A class project I created to learn Babylon.js, where the player controls a bouncy ball which can knock around other objects in a room.",
+            "image": "Tech",
+            "link": "https://cordellbonnieux.github.io/CPSC2130_Lab7/",
             "list": {
                 "title": "",
                 "items": [
-                    "",
-                    "",
-                    ""
+                    "JavaScript",
+                    "Babylon.js",
+                    "HTML"
+                ]
+            }
+        },
+        {
+            "title": "Cafe Page",
+            "text": "A fake cafe website I created for fun and I really liked the way it turned out so I decided to share!",
+            "image": "",
+            "link": "https://cordellbonnieux.github.io/Restaurant-Page/",
+            "list": {
+                "title": "Tech",
+                "items": [
+                    "JavaScript",
+                    "HTML",
+                    "CSS",
+                    "Adobe Illustrator"
+                ]
+            }
+        },
+        {
+            "title": "Kitty Generator",
+            "text": "A class project, which allows the user to create custom kitties to spawn on a geometric scene.",
+            "image": "",
+            "link": "https://github.com/cordellbonnieux/CPSC1181_Assignment5",
+            "list": {
+                "title": "Tech",
+                "items": [
+                    "Java",
+                    "JavaFX"
+                ]
+            }
+        },
+        {
+            "title": "Messenger Program",
+            "text": "A java program which allows users to messages to one another, using a graphical UI.",
+            "image": "",
+            "link": "https://github.com/cordellbonnieux/CPSC1181_Assignment6",
+            "list": {
+                "title": "Tech",
+                "items": [
+                    "Java",
+                    "JavaFX"
                 ]
             }
         }
