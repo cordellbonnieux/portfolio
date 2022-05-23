@@ -1,7 +1,7 @@
 // TODO: Destructure props
 export default function Item(props) {
     let classes = ''
-    let img, t, p, list
+    let [img, t, p, list, id] = [...props]
     let title = props.title ? props.title : 'Cordell Bonnieux'
     if (props.img) {
         classes.length > 1 ? classes += ' img' : classes += 'img'
@@ -40,7 +40,7 @@ export default function Item(props) {
         list = <></>
     }
     return (
-        <figure className={classes}>
+        <figure className={classes} id={id}>
             {img}
             {t}
             {p}
