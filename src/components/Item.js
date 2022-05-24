@@ -1,8 +1,9 @@
 // TODO: Destructure props
 export default function Item(props) {
     let classes = ''
-    let [img, t, p, list, id] = [...props]
+    let [ img, t, p, list ] = [ props ]
     let title = props.title ? props.title : 'Cordell Bonnieux'
+    let id = 'inneritem' + title.split(' ').join('')
     if (props.img) {
         classes.length > 1 ? classes += ' img' : classes += 'img'
         img = <img src={props.img} alt={title} />
@@ -26,7 +27,7 @@ export default function Item(props) {
         }
         let listItems = []
         props.list.items.forEach((item, index) => {
-            listItems.push(<li key={props.list}>{item}</li>)
+            listItems.push(<li>{item}</li>)
         })
         list = (
             <div className="list">
@@ -40,7 +41,7 @@ export default function Item(props) {
         list = <></>
     }
     return (
-        <figure className={classes} id={id}>
+        <figure className={classes} key={id}>
             {img}
             {t}
             {p}

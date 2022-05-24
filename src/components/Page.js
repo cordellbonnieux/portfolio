@@ -1,35 +1,16 @@
 import Item from './Item'
 
-// EXAMPLE DATA
-const kitty = 'https://getwallpapers.com/wallpaper/full/1/0/c/1344537-kitty-cat-wallpaper-1920x1280-meizu.jpg'
-let list = {
-    title: 'This is a list title',
-    items: [
-        'item 1',
-        'item 2',
-        'item 3',
-        'item 4',
-        'item 5'
-    ]
-}
-//
-
 export default function Page(props) {
-    let content
-    if (props.section == 'bio') {
-        content = []
-        content.push(<Item img={kitty} title='example' p='some text about things' list={list} />)
-        content.push(<Item img={kitty} title='example' p='some text about things' list={list} />)
-        content.push(<Item img={kitty} title='example' p='some text about things' list={list} />)
-        content.push(<Item img={kitty} title='example' p='some text about things' list={list} />)
-    } else if (props.section == 'projects') {
-
-    } else if (props.section == 'contact') {
-
-    }
+    let [ page ] = [ props ] 
+    let items = []
+    let key = 'section' + page.page.split(' ').join('')
+    page.items.forEach(item => {
+        let id = item.title.split(' ').join('')
+        items.push(<Item img={item.image} title={item.title} p={item.text} list={item.list} key={id} />)
+    });
     return (
-        <section id={props.section}>
-            {content}
+        <section key={key}>
+            {items}
         </section>
     )
 }
