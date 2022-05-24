@@ -3,13 +3,14 @@ import Item from './Item'
 export default function Page(props) {
     let [ page ] = [ props ] 
     let items = []
-    let key = 'section' + page.page.split(' ').join('')
+    let id = page.page.split(' ').join('')
+    let key = 'section' + id
     page.items.forEach(item => {
-        let id = item.title.split(' ').join('')
-        items.push(<Item img={item.image} title={item.title} p={item.text} list={item.list} key={id} />)
-    });
+        let uid = item.title.split(' ').join('')
+        items.push(<Item img={item.image} title={item.title} p={item.text} list={item.list} key={uid} />)
+    })
     return (
-        <section key={key}>
+        <section key={key} id={id}>
             {items}
         </section>
     )
