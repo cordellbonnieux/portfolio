@@ -1,5 +1,8 @@
 export default function List(props) {
     let { listObject } = props
+    if (!listObject) {
+        return <></>
+    } 
     let items = []
     listObject.items.forEach((item) => {
         let key = 'item' + item.toString()
