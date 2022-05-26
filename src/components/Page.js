@@ -7,7 +7,7 @@ export default function Page(props) {
     let key = 'section' + id
     page.items.forEach(item => {
         let uid = item.title.split(' ').join('')
-        items.push(<Item img={item.image} title={item.title} p={item.text} list={item.list} key={uid} />)
+        items.push(<Item img={item.image} title={item.title} p={item.text} link={item.link} list={item.list} key={uid} />)
     })
     return (
         <section key={key} id={id}>

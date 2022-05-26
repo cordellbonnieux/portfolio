@@ -87,10 +87,10 @@
         {
             "title": "Bouncy Ball",
             "text": "A class project I created to learn Babylon.js, where the player controls a bouncy ball which can knock around other objects in a room.",
-            "image": "Tech",
+            "image": "",
             "link": "https://cordellbonnieux.github.io/CPSC2130_Lab7/",
             "list": {
-                "title": "",
+                "title": "Tech",
                 "items": [
                     "JavaScript",
                     "Babylon.js",

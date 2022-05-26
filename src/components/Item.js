@@ -5,7 +5,8 @@ import List from './List'
 
 export default function Item(props) {
     let classes = ''
-    let { img, p, list, title } = props
+    let container
+    let { img, p, list, title, link } = props
     // id & key
     let id = 'inneritem' + title.split(' ').join('')
     // classes
@@ -21,10 +22,25 @@ export default function Item(props) {
             classes.length > 1 ? classes += ' text' : classes += 'text'
         }
     }
+    // link determines how items are rendered
+    if (link) {
+        container = (
+            <a href={link} target='_blank'>
+                <Image source={img} alt={title} />
+                <Title heading={title} />
+            </a>  
+        )
+    } else {
+        container = (
+            <div>
+                <Image source={img} alt={title} />
+                <Title heading={title} />
+            </div>
+        )
+    }
     return (
         <figure className={classes} key={id} id={id}>
-            <Image source={img} alt={title} />
-            <Title heading={title} />
+            {container}
             <Paragraph content={p} />
             <List listObject={list} />
         </figure>
