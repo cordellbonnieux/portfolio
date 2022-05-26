@@ -2,13 +2,13 @@ export default function Menu() {
     return (
         <ul className="hide">
             <li>
-                <a href="#">Bio</a>
+                <a href="#bio">Bio</a>
             </li>
             <li>
-                <a href="#">Projects</a>
+                <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     )

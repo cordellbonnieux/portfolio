@@ -3,57 +3,29 @@
     "items": [
         {
             "title": "Hello there!",
-            "text": "Welcome to my portfolio",
-            "image": "",
-            "link": "",
-            "list": {
-                "title": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            }
+            "text": "Welcome to my portfolio, I am a Computer Science student studying at Langara in Vancouver, Canada. In the past I have worked as a front-end developer and graphic designer, but I am also interested in other areas of computing and programming. I am always creating and learning new things, so I'll be frequently updating this portfolio. If you like what you see and would like to talk, you can send me a message.",
+            "image": ""
         },
         {
-            "title": "",
-            "text": "",
-            "image": "",
-            "link": "",
+            "title": "Technical Skills & Knowledge",
             "list": {
                 "title": "",
                 "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            }
-        },
-        {
-            "title": "",
-            "text": "",
-            "image": "",
-            "link": "",
-            "list": {
-                "title": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            }
-        },
-        {
-            "title": "",
-            "text": "",
-            "image": "",
-            "link": "",
-            "list": {
-                "title": "",
-                "items": [
-                    "",
-                    "",
-                    ""
+                    "JavaScript - TypeScript, Node, NPM, Webpack, Parcel, Express, React, Phaser, Babylon, Canvas",
+                    "HTML",
+                    "CSS",
+                    "Java - JavaFX",
+                    "Python - PyMongo",
+                    "C# - Unity",
+                    "PHP - WordPress, Drupal",
+                    "NoSQL - MongoDB, Firebase/Firestore, AWS",
+                    "JSON",
+                    "MYSQL",
+                    "Windows, Mac, Linux",
+                    "BASH",
+                    "GDscript - Godot",
+                    "Adobe - Photoshop, Illustrator, Premier, Audition",
+                    "GIMP2"
                 ]
             }
         }
