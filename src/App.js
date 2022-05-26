@@ -4,12 +4,11 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App(props) {
-  let [ projects ] = [ props ]
-
+  let { projects, bio } = props
   return (
     <div className="App" key="app">
       <Header key="header"/>
-      <Main projects={projects.projects} key="main" />
+      <Main projects={projects} bio={bio} key="main" />
       <Footer key="footer"/>
     </div>
   )

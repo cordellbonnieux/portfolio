@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import projects from './data/projects.json'
+import bio from './data/bio.json'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App projects={projects}/>
+    <App projects={projects} bio={bio}/>
   </React.StrictMode>
 );
 

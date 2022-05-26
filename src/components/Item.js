@@ -25,7 +25,7 @@ export default function Item(props) {
     // link determines how items are rendered
     if (link) {
         container = (
-            <a href={link} target='_blank'>
+            <a href={link} target='_blank' rel="noreferrer">
                 <Image source={img} alt={title} />
                 <Title heading={title} />
             </a>  
