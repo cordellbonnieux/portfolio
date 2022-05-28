@@ -2,13 +2,14 @@ import React, { useState } from "react";
 
 export default function Contact() {
     const form = (
-        <form onSubmit={(e) => submitForm(e)} action="https://formsubmit.co/54f77a69e8f5e4acf36b897045cb37f6" method="POST">
+        // TODO: add async
+        <form action="https://formsubmit.co/54f77a69e8f5e4acf36b897045cb37f6" method="POST">
             <div>
-                <label for="name">name:</label>
+                <label htmlFor="name">name:</label>
                 <input type="text" id="name" name="name" required />
             </div>
             <div>
-                <label for="email">email:</label>
+                <label htmlFor="email">email:</label>
                 <input type="email" id="email" name="email" required />
             </div>
             <div>
@@ -19,16 +20,19 @@ export default function Contact() {
             </div>
         </form>
     )
+
     const confirmation = (
         <div>
             <h5>Your email has been sent, thanks for getting in touch.</h5>
             <button onClick={resetForm}>reset contact form</button>
         </div>
     )
+
     const [ output, setOutput ] = useState(form)
 
     function submitForm(e) {
-        e.preventDefault()
+        // TODO: add async
+        //e.preventDefault()
         setOutput(confirmation)
     }
 

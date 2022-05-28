@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer>
-            <p>Footer</p>
+            <a href="#root">back to top </a>
         </footer>
     )
 }
