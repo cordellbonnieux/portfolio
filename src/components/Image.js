@@ -1,6 +1,6 @@
 export default function Image(props) {
-    let { alt } = props
-    let source, path = '../img/'
+    let { alt, src } = props
+    let source = '../img/' + src
     if (!alt) {
         return <></>
     } else {

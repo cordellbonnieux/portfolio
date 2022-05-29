@@ -3,6 +3,7 @@
     "items": [
         {
             "title": "Asteroid Blaster",
+            "imgClass": "asteroids",
             "text": "This is a twin-stick shooter web-browser based game, where the user pilots a space craft which must traverse through an asteroid field. The game has three difficulties and will keep track of your ship durability, score and time survived.",
             "link": "https://cordellbonnieux.github.io/CPSC2130_Lab3/",
             "list": {
@@ -17,6 +18,7 @@
         },
         {
             "title": "Have A Good Laugh",
+            "imgClass": "hagl",
             "text": "Website for local music festival, containing ticket sales portal, videos, images along with some nice animations.",
             "link": "https://haveagoodlaugh.org/",
             "list": {
@@ -33,6 +35,7 @@
         },
         {
             "title": "Audiopile",
+            "imgClass": "audiopile",
             "text": "E-commerce website for local record store, containing thousands of items and a customized organizational system. The site back-end also features real-time synching with store inventory, and automated tax system.",
             "link": "https://audiopile.ca/",
             "list": {
@@ -51,6 +54,7 @@
         },
         {
             "title": "Weather App",
+            "imgClass": "weather",
             "text": "A web application which allows you to retrieve the weather from any city in the world, along with that it will retrieve a nice image of said city.",
             "link": "https://cordellbonnieux.github.io/Weather-App/dist/",
             "list": {
@@ -68,6 +72,7 @@
         },
         {
             "title": "Tic-Tac-Toe",
+            "imgClass": "tic-tac-toe",
             "text": "Classic game of tic-tac-toe, browser-based game.",
             "link": "https://cordellbonnieux.github.io/tic-tac-toe/",
             "list": {
@@ -81,6 +86,7 @@
         },
         {
             "title": "Bouncy Ball",
+            "imgClass": "bouncy-ball",
             "text": "A class project I created to learn Babylon.js, where the player controls a bouncy ball which can knock around other objects in a room.",
             "link": "https://cordellbonnieux.github.io/CPSC2130_Lab7/",
             "list": {
@@ -94,6 +100,7 @@
         },
         {
             "title": "Cafe Page",
+            "imgClass": "cafe",
             "text": "A fake cafe website I created for fun and I really liked the way it turned out so I decided to share!",
             "link": "https://cordellbonnieux.github.io/Restaurant-Page/",
             "list": {
@@ -108,6 +115,7 @@
         },
         {
             "title": "Kitty Generator",
+            "imgClass": "kitty",
             "text": "A class project, which allows the user to create custom kitties to spawn on a geometric scene.",
             "link": "https://github.com/cordellbonnieux/CPSC1181_Assignment5",
             "list": {

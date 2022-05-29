@@ -1,16 +1,14 @@
 import Title from './Heading3'
-import Image from './Image'
 import Paragraph from './Paragraph'
 import List from './List'
 
 export default function Item(props) {
-    let classes = ''
-    let container
-    let { img, p, list, title, link } = props
+    let container, classes = ''
+    let { p, list, title, link, imgClass } = props
     // id & key
     let id = 'inneritem' + title.split(' ').join('')
     // classes
-    if (img) {
+    if (imgClass) {
         classes.length > 1 ? classes += ' img' : classes += 'img'
     }
     if (p) {
@@ -22,18 +20,32 @@ export default function Item(props) {
             classes.length > 1 ? classes += ' text' : classes += 'text'
         }
     }
-    // link determines how items are rendered
-    if (link) {
+    // link & source determines how items are rendered
+    if (link && imgClass) {
         container = (
             <a href={link} target='_blank' rel="noreferrer">
-                <Image alt={title} />
-                <Title heading={title} />
+                <div className={`${imgClass} image`}>
+                    <Title heading={title} />
+                </div>
             </a>  
         )
-    } else {
+    } else if (link && !imgClass) {
+        container = (
+            <a href={link} target='_blank' rel="noreferrer">
+                <div>
+                    <Title heading={title} />
+                </div>
+            </a> 
+        )
+    } else if (!link && imgClass) {
+        container = (
+            <div className={`${imgClass} image`}>
+                <Title heading={title} />
+            </div>
+        )
+    } else if (!link && !imgClass) {
         container = (
             <div>
-                <Image alt={title} />
                 <Title heading={title} />
             </div>
         )

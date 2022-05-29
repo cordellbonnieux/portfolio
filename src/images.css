@@ -1,0 +1,38 @@
+.image {
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.asteroids {
+    background-image: url('img/astroids.jpg');
+}
+
+.hagl {
+    background-image: url('img/hagl.jpg');
+}
+
+.audiopile {
+    background-image: url('img/audiopile.jpg');
+}
+
+.weather {
+    background-image: url('img/weather.jpg');
+}
+
+.tic-tac-toe {
+    background-image: url('img/tic-tac-toe.jpg');
+}
+
+.bouncy-ball {
+    background-image: url('img/ball.jpg');
+}
+
+.cafe {
+    background-image: url('img/dons.jpg');
+}
+
+.kitty {
+    background-image: url('img/kitty.jpg');
+}
