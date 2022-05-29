@@ -3,11 +3,11 @@ import Page from './Page'
 import Contact from './Contact'
 
 export default function Main(props) {
-    let { projects, bio } = props
+    let { projects, bio, images } = props
     return (
         <main>
-            <Page key={bio.id} items={bio.items} page={bio.page}/>
-            <Page key={projects.id} items={projects.items} page={projects.page}/>
+            <Page key={bio.id} projects={bio.items} page={bio.page}/>
+            <Page key={projects.id} projects={projects.items} page={projects.page} images={images}/>
             <Contact />
         </main>
     )

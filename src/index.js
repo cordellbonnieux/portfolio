@@ -9,7 +9,7 @@ import bio from './data/bio.json'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App projects={projects} bio={bio}/>
+    <App projects={projects} bio={bio} />
   </React.StrictMode>
 );
 

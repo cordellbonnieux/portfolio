@@ -26,14 +26,14 @@ export default function Item(props) {
     if (link) {
         container = (
             <a href={link} target='_blank' rel="noreferrer">
-                <Image source={img} alt={title} />
+                <Image alt={title} />
                 <Title heading={title} />
             </a>  
         )
     } else {
         container = (
             <div>
-                <Image source={img} alt={title} />
+                <Image alt={title} />
                 <Title heading={title} />
             </div>
         )
