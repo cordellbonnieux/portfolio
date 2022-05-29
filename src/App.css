@@ -4,9 +4,9 @@
 
 header {
   justify-content: center;
-  height: 100vh;
+  height: 50vh;
   animation: header-slider 3s ease;
-  animation-delay: 6s;
+  animation-delay: 9s;
 }
 
 header ul {
@@ -119,10 +119,38 @@ h2.typewriter {
 body {
   background-color: #000;
   color: #fff;
+  animation: y-scroll 10s;
+}
+
+/* disable y-scroll while slider is in process*/
+@keyframes y-scroll {
+  0% {
+    overflow-y: hidden;
+  }
+  99% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: auto;
+  }
 }
 
 main {
   max-width: 900px;
+  animation: hide 10s;
+}
+
+/* hide main content for 10 secs*/
+@keyframes hide {
+  0% {  
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 main section {
