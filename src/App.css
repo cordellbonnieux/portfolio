@@ -4,10 +4,44 @@
 
 header {
   justify-content: center;
-  height: 50vh;
+  height: 55vh;
   animation: header-slider 3s ease;
-  animation-delay: 9s;
+  animation-delay: 6s;
 }
+
+header #avatar {
+  background-image: url('img/avatar.png');
+  width: 270px;
+  height: 270px;
+  border-radius: 270px;
+  position: absolute;
+  top: 5vh;
+  left: calc((100vw - 270px) / 2);
+  animation: avatar-roller 6s ease-in-out;
+}
+
+/* Timed header slide effect */
+@keyframes header-slider {
+  from {
+    height: 100vh;
+  } 
+  to {
+    height: 55vh;
+  }
+}
+
+/* Timed avatar rollin-in effect */
+@keyframes avatar-roller {
+  0% {
+    left: -540px;
+    transform: rotate(-360deg);
+  }
+  100% {
+    left: calc((100vw - 270px) / 2);
+    transform: rotate(0deg);
+  }
+}
+
 
 header ul {
   padding: 0;
@@ -19,18 +53,8 @@ header ul {
 
 header > ul > li:first-child {
   position: relative;
-  top: 40vh;
+  top: 48vh;
   margin: auto;
-}
-
-/* Timed header slide effect */
-@keyframes header-slider {
-  from {
-    height: 100vh;
-  } 
-  to {
-    height: 50vh;
-  }
 }
 
 #hamburger {
@@ -87,7 +111,7 @@ h1.typewriter {
 h2.typewriter {
   color: transparent;
   animation: 
-    typing 6s steps(20, end),
+    typing 3s steps(20, end),
     blink-caret .75s step-end infinite;
     animation-delay: 3s;
 }
@@ -119,7 +143,7 @@ h2.typewriter {
 body {
   background-color: #000;
   color: #fff;
-  animation: y-scroll 10s;
+  animation: y-scroll 7s;
 }
 
 /* disable y-scroll while slider is in process*/
@@ -137,7 +161,7 @@ body {
 
 main {
   max-width: 900px;
-  animation: hide 10s;
+  animation: hide 7s;
 }
 
 /* hide main content for 10 secs*/
