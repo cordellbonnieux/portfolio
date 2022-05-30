@@ -1,4 +1,11 @@
 /*
+* General
+*/
+a {
+  color: #fff;
+}
+
+/*
 *  Header
 */
 
@@ -61,26 +68,24 @@ header > ul > li:first-child {
   position: fixed;
   top: 1em;
   right: 1em;
-  background-color: #fff;
-  border-radius: 8px;
+  padding: 0 0.3em 0.2em 0.3em;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #hamburger > div {
-  border: 2px solid #000;
   width: 34px;
-  height: 32px;
+  height: 34px;
 }
 
 #hamburger div span {
-  border-bottom: 3px solid #000;
+  border-bottom: 3.5px solid #fff;
   width: 34px;
   height: 1px;
   display: block;
-  margin: 4.5px 0 ;
+  margin: 8px 0 ;
 }
 
-#navigation ul {
-  display: block;
+#navigation nav ul {
   position: fixed;
   top: 5em;
   right: 1em;
