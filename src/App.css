@@ -1,6 +1,12 @@
 /*
 * General
 */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Fira Code', monospace;
+}
+
 a {
   color: #fff;
 }
@@ -11,7 +17,7 @@ a {
 
 header {
   justify-content: center;
-  height: 55vh;
+  height: calc(270px + 20vh);
   animation: header-slider 3s ease;
   animation-delay: 6s;
 }
@@ -33,7 +39,7 @@ header #avatar {
     height: 100vh;
   } 
   to {
-    height: 55vh;
+    height: calc(270px + 20vh);
   }
 }
 
@@ -49,6 +55,9 @@ header #avatar {
   }
 }
 
+#navigation {
+  animation: hide 7s ease;
+}
 
 header ul {
   padding: 0;
@@ -60,7 +69,7 @@ header ul {
 
 header > ul > li:first-child {
   position: relative;
-  top: 48vh;
+  top: calc(270px + 10vh);
   margin: auto;
 }
 
