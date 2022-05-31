@@ -4,7 +4,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 body {
+  color: #fff;
+  background-color: #fff;
   font-family: 'Fira Code', monospace;
+  animation: y-scroll 7s;
+}
+
+/* disable y-scroll while slider is in process*/
+@keyframes y-scroll {
+  0% {
+    overflow-y: hidden;
+  }
+  99% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: auto;
+  }
+}
+
+#root {
+  animation: gradient 60s ease-in-out infinite;
+  animation-delay: 7s;
+  transition: 5s;
+  background-color: #000;
+}
+
+/* background gradient animation */
+@keyframes gradient {
+  0%{
+    background-color: rgba(0, 102, 255, 0.5);
+  }
+  10%{
+    background-color: rgba(0, 102, 255, 1);
+  }
+  20%{
+    background-color: rgba(51, 153, 51, 0.5);
+  }
+  30%{
+    background-color: rgba(51, 153, 51, 1);
+  }
+  40%{
+    background-color: rgba(102, 102, 255, 0.5);
+  }
+  50%{
+    background-color: rgba(102, 102, 255, 1);
+  }
+  60%{
+    background-color: rgba(204, 102, 0, 0.5);
+  }
+  70%{
+    background-color: rgba(204, 102, 0, 1);
+  }
+  80%{
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  90%{
+    background-color: rgba(255, 0, 0, 1);
+  }
+  100%{
+    background-color: rgba(255, 0, 0, 0.5);
+  }
 }
 
 a {
@@ -154,28 +214,10 @@ h2.typewriter {
 * Main
 */
 
-body {
-  background-color: #000;
-  color: #fff;
-  animation: y-scroll 7s;
-}
-
-/* disable y-scroll while slider is in process*/
-@keyframes y-scroll {
-  0% {
-    overflow-y: hidden;
-  }
-  99% {
-    overflow-y: hidden;
-  }
-  100% {
-    overflow-y: auto;
-  }
-}
-
 main {
   max-width: 900px;
   animation: hide 7s;
+  margin: auto;
 }
 
 /* hide main content for 10 secs*/
