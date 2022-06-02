@@ -17,7 +17,7 @@ body {
     overflow-y: hidden;
   }
   80% {
-
+    background-color:  rgba(0, 0, 0, 0.8);
   }
   99% {
     overflow-y: hidden;
@@ -242,10 +242,103 @@ main section {
   flex-wrap: wrap;
 }
 
+main #bio {
+  margin: 25px auto;
+  justify-content: center;
+}
+
 main section figure {
-  max-width: 400px;
+  max-width: 325px;
   min-width: 275px;
-  margin: 25px;
+  padding: 0 1em 1em 1em;
+}
+
+main #bio figure {
+  background-color: #000;
+}
+
+main #projects figure {
+  margin: 25px auto;
+  background-color: rgba(255,255,255,1);
+  color: #000;
+}
+
+figure {
+  margin: 0;
+}
+
+main section figure a div {
+  position: relative;
+  margin-top: 1em;
+}
+
+main section figure a div h3 {
+  position: absolute;
+  bottom: -1em;
+  background-color: #000;
+  left: -0.5em;
+  padding: 1em 2em 0.25em 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+  main #bio {
+    background-color: #000;
+  }
+}
+
+/*
+* tilt animations
+*/
+@media screen and (min-width: 400px) {
+  main #projects figure {
+    animation: tilt 10s ease-in-out infinite;
+  }
+  
+  main #projects figure:nth-child(2), main #projects figure:nth-child(6) {
+    animation: tilt2 15s ease-in-out infinite;
+  }
+  
+  main #projects figure:nth-child(3), main #projects figure:nth-child(7) {
+    animation: tilt2 10s ease-in-out infinite;
+  }
+  
+  main #projects figure:nth-child(4), main #projects figure:nth-child(8) {
+    animation-duration: 15s;
+  }
+  
+  /* tilt the items */
+  @keyframes tilt {
+    0% {
+      transform: skew(0);
+    }
+    30% {
+      transform: skewX(-3deg);
+      transform: skewY(-3deg);
+    }
+    70% {
+      transform: skewX(2deg);
+      transform: skewY(2deg);
+    }
+    100% {
+      transform: skew(0deg);
+    }
+  }
+  @keyframes tilt2 {
+    0% {
+      transform: skew(0);
+    }
+    30% {
+      transform: skewX(2deg);
+      transform: skewY(2deg);
+    }
+    70% {
+      transform: skewX(-3deg);
+      transform: skewY(-3deg);
+    }
+    100% {
+      transform: skew(0deg);
+    }
+  }
 }
 
 /*
