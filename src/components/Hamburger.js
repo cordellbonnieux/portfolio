@@ -1,11 +1,13 @@
 export default function Hamburger() {
+    function menu() {
+        let element = document.getElementById('menu')
+        if (element.className === 'hide') {
+            element.className = 'show'
+        } else {
+            element.className = 'hide'
+        }
+    }
     return (
-        <div id="hamburger">
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+        <button id="hamburger" onClick={menu}>menu</button>
     )
 }

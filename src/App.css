@@ -139,12 +139,27 @@ header > ul > li:first-child {
 
 #hamburger {
   position: fixed;
-  top: 1em;
-  right: 1em;
+  top: 0.1em;
+  right: 0.1em;
+  /*
   padding: 0 0.3em 0.2em 0.3em;
-  background-color: rgba(0, 0, 0, 0.8);
+  */
+  background-color: rgba(0, 0, 0, 1);
+  box-shadow: none;
+  border: 0;
+  padding: 0.5em 1em;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1em;
+  z-index: 10;
+  cursor: pointer;
 }
 
+#hamburger:hover {
+  text-decoration: none;
+}
+
+/*
 #hamburger > div {
   width: 34px;
   height: 34px;
@@ -157,7 +172,7 @@ header > ul > li:first-child {
   display: block;
   margin: 8px 0 ;
 }
-
+*/
 #navigation nav ul {
   position: fixed;
   top: 5em;

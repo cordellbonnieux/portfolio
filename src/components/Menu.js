@@ -1,6 +1,6 @@
 export default function Menu() {
     return (
-        <ul className="hide">
+        <ul className="hide" id="menu">
             <li>
                 <a href="#bio">Bio</a>
             </li>
