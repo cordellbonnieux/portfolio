@@ -219,7 +219,6 @@ h2.typewriter {
 */
 
 main {
-  max-width: 900px;
   animation: hide 7s;
   margin: auto;
 }
@@ -243,8 +242,14 @@ main section {
 }
 
 main #bio {
-  margin: 25px auto;
+  margin: 25px 0;
   justify-content: center;
+  background-color: #000;
+}
+
+main #projects {
+  max-width: 1600px;
+  margin: auto;
 }
 
 main section figure {
@@ -280,64 +285,61 @@ main section figure a div h3 {
   padding: 1em 2em 0.25em 0.5em;
 }
 
-@media screen and (max-width: 900px) {
-  main #bio {
-    background-color: #000;
+@media screen and (min-width: 900px) {
+  main #bio figure{
+    margin:0 3vw;
   }
 }
-
 /*
 * tilt animations
 */
-@media screen and (min-width: 400px) {
-  main #projects figure {
-    animation: tilt 10s ease-in-out infinite;
+main #projects figure {
+  animation: tilt 10s ease-in-out infinite;
+}
+
+main #projects figure:nth-child(2), main #projects figure:nth-child(6) {
+  animation: tilt2 15s ease-in-out infinite;
+}
+
+main #projects figure:nth-child(3), main #projects figure:nth-child(7) {
+  animation: tilt2 10s ease-in-out infinite;
+}
+
+main #projects figure:nth-child(4), main #projects figure:nth-child(8) {
+  animation-duration: 15s;
+}
+
+/* tilt the items */
+@keyframes tilt {
+  0% {
+    transform: skew(0);
   }
-  
-  main #projects figure:nth-child(2), main #projects figure:nth-child(6) {
-    animation: tilt2 15s ease-in-out infinite;
+  30% {
+    transform: skewX(-3deg);
+    transform: skewY(-3deg);
   }
-  
-  main #projects figure:nth-child(3), main #projects figure:nth-child(7) {
-    animation: tilt2 10s ease-in-out infinite;
+  70% {
+    transform: skewX(2deg);
+    transform: skewY(2deg);
   }
-  
-  main #projects figure:nth-child(4), main #projects figure:nth-child(8) {
-    animation-duration: 15s;
+  100% {
+    transform: skew(0deg);
   }
-  
-  /* tilt the items */
-  @keyframes tilt {
-    0% {
-      transform: skew(0);
-    }
-    30% {
-      transform: skewX(-3deg);
-      transform: skewY(-3deg);
-    }
-    70% {
-      transform: skewX(2deg);
-      transform: skewY(2deg);
-    }
-    100% {
-      transform: skew(0deg);
-    }
+}
+@keyframes tilt2 {
+  0% {
+    transform: skew(0);
   }
-  @keyframes tilt2 {
-    0% {
-      transform: skew(0);
-    }
-    30% {
-      transform: skewX(2deg);
-      transform: skewY(2deg);
-    }
-    70% {
-      transform: skewX(-3deg);
-      transform: skewY(-3deg);
-    }
-    100% {
-      transform: skew(0deg);
-    }
+  30% {
+    transform: skewX(2deg);
+    transform: skewY(2deg);
+  }
+  70% {
+    transform: skewX(-3deg);
+    transform: skewY(-3deg);
+  }
+  100% {
+    transform: skew(0deg);
   }
 }
 
