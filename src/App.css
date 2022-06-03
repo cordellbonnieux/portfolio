@@ -81,6 +81,10 @@ a:hover {
   text-decoration: none;
 }
 
+input:focus, textarea:focus {
+  outline: none;
+}
+
 /*
 *  Header
 */
@@ -147,9 +151,6 @@ header > ul > li:first-child {
   position: fixed;
   top: 0.1em;
   right: 0.1em;
-  /*
-  padding: 0 0.3em 0.2em 0.3em;
-  */
   background-color: rgba(0, 0, 0, 1);
   box-shadow: none;
   border: 0;
@@ -394,21 +395,68 @@ main #projects figure:nth-child(4), main #projects figure:nth-child(8) {
 /*
 * Contact
 */
+
 main #contact {
   margin-top: 50px;
   padding: 100px 0;
   justify-content: center;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+main #contact form {
+  width: 80vw;
+  max-width: 400px;
 }
 
 main #contact form div {
-  margin: 1em 0;
+  margin: 1em auto;
+  position: relative;
+  max-width: 400px;
+}
+
+main #contact form div input{
+  position: absolute;
+  right: -1.15em;
+  width: calc((80vw - 65px));
+  padding: 0.5em;
+}
+
+main #contact form div label {
+  margin-top: 0.25em;
+  display: inline-block;
 }
 
 main #contact form div textarea {
   resize: none;
   width: 100%;
   height: 10em;
+  margin: 0;
+  padding: 0.5em;
+}
+
+main #contact form div input[type="submit"] {
+  width: auto;
+  background-color: #fff;
+  box-shadow: none;
+  border: 0;
+  padding: 0.5em 1em;
+  color: #000;
+  text-decoration: underline;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: 'Fira Code', monospace;
+  right: -1em;
+}
+
+main #contact form div input[type="submit"]:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (min-width: 500px) {
+  main #contact form div input{
+    width: 325px;
+  }
 }
 
 /*
@@ -416,11 +464,7 @@ main #contact form div textarea {
 */
 
 footer {
-  background-color:#fff;
+  background-color: rgba(0, 0, 0, 1);
   text-align: center;
-  padding: 1em 0;
-}
-
-footer a {
-  color: #000;
+  padding: 2em 0;
 }
