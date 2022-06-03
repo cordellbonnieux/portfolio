@@ -1,1 +1,3 @@
-My new dev portfolio, still a work in progress.
+My dev portfolio, built using create-react-app.
+
+https://cordellbonnieux.github.io/portfolio
