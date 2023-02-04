@@ -1,18 +1,28 @@
 {
     "page": "projects",
     "items": [
-        {
-            "title": "Asteroid Blaster",
-            "imgClass": "asteroids",
-            "text": "This is a twin-stick shooter web-browser based game, where the user pilots a space craft which must traverse through an asteroid field. The game has three difficulties and will keep track of your ship durability, score and time survived.",
-            "link": "https://cordellbonnieux.github.io/CPSC2130_Lab3/",
+                {
+            "title": "Battle-Sim Prototype",
+            "imgClass": "battle-sim",
+            "text": "This is an online 1vs1 browser-based strategy game with automatic match-making. After you've been placed in a match with another player, you will each take control of 5 units who can each attack and move once per turn. The game will alternate turn until one player is either defeated, or surrenders.",
+            "link": "https://cordellbonnieux.github.io/CPSC2600_Project/",
             "list": {
                 "title": "Tech",
                 "items": [
                     "JavaScript",
+                    "React.js",
+                    "Node.js",
+                    "Express.js",
+                    "CORs",
+                    "Websockets (socket.io)",
+                    "MongoDB",
+                    "Railway",
+                    "Github Pages",
                     "Canvas API",
                     "HTML",
-                    "CSS"
+                    "CSS",
+                    "Adobe Photoshop",
+                    "GIMP2"
                 ]
             }
         },
@@ -24,11 +34,11 @@
             "list": {
                 "title": "Tech",
                 "items": [
-                    "JavaScript",
+                    "JavaScript / JSX",
                     "React.js",
+                    "Node.js",
+                    "Github Pages",
                     "Webpack",
-                    "Express.js (for testing)",
-                    "JSX",
                     "CSS"
                 ]
             }
@@ -44,11 +54,33 @@
                     "Wordpress",
                     "WooCommerce",
                     "PHP",
-                    "JavaScript",
+                    "JavaScript / JQuery",
                     "HTML",
                     "CSS (Bootstrap)",
                     "QuickBooks",
-                    "Square"
+                    "Square",
+                    "REST APIs",
+                    "MySQL",
+                    "Apache",
+                    "Adobe Illustrator",
+                    "Adobe Photoshop"
+                ]
+            }
+        },
+                {
+            "title": "Asteroid Blaster",
+            "imgClass": "asteroids",
+            "text": "This is a twin-stick shooter web-browser based game, where the user pilots a space craft which must traverse through an asteroid field. The game has three difficulties and will keep track of your ship durability, score and time survived.",
+            "link": "https://cordellbonnieux.github.io/CPSC2130_Lab3/",
+            "list": {
+                "title": "Tech",
+                "items": [
+                    "JavaScript",
+                    "Canvas API",
+                    "Github Pages",
+                    "HTML",
+                    "CSS",
+                    "Adobe Photoshop"
                 ]
             }
         },
@@ -64,8 +96,8 @@
                     "HTML",
                     "CSS",
                     "REST APIs",
+                    "Github Pages",
                     "Node.js",
-                    "Express (for testing)",
                     "Webpack"
                 ]
             }
@@ -79,6 +111,7 @@
                 "title": "Tech",
                 "items": [
                     "JavaScript",
+                    "Github Pages",
                     "HTML",
                     "CSS"
                 ]
@@ -93,6 +126,7 @@
                 "title": "Tech",
                 "items": [
                     "JavaScript",
+                    "Github Pages",
                     "Babylon.js",
                     "HTML"
                 ]
@@ -107,6 +141,7 @@
                 "title": "Tech",
                 "items": [
                     "JavaScript",
+                    "Github Pages",
                     "HTML",
                     "CSS",
                     "Adobe Illustrator"
