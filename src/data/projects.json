@@ -21,25 +21,9 @@
                     "Canvas API",
                     "HTML",
                     "CSS",
-                    "Adobe Photoshop",
+                    "Tiled",
+                    "Asprite",
                     "GIMP2"
-                ]
-            }
-        },
-        {
-            "title": "Have A Good Laugh",
-            "imgClass": "hagl",
-            "text": "Website for local music festival, containing ticket sales portal, videos, images along with some nice animations.",
-            "link": "https://haveagoodlaugh.org/",
-            "list": {
-                "title": "Tech",
-                "items": [
-                    "JavaScript / JSX",
-                    "React.js",
-                    "Node.js",
-                    "Github Pages",
-                    "Webpack",
-                    "CSS"
                 ]
             }
         },
@@ -64,6 +48,43 @@
                     "Apache",
                     "Adobe Illustrator",
                     "Adobe Photoshop"
+                ]
+            }
+        },
+        {
+            "title": "Quiz App",
+            "imgClass": "quiz",
+            "text": "A Quiz web app which utilizes REST APIs to create question cards. After each round your score is tallied, and your average is added to the leaderboard.",
+            "link": "https://quizapp.up.railway.app/",
+            "list": {
+                "title": "Tech",
+                "items": [
+                    "JavaScript",
+                    "PHP",
+                    "Railway",
+                    "MySQL",
+                    "CSS",
+                    "Apache",
+                    "REST APIs",
+                    "MariaDB",
+                    "HTML"
+                ]
+            }
+        },
+        {
+            "title": "Have A Good Laugh",
+            "imgClass": "hagl",
+            "text": "Website for local music festival, containing ticket sales portal, videos, images along with some nice animations.",
+            "link": "https://haveagoodlaugh.org/",
+            "list": {
+                "title": "Tech",
+                "items": [
+                    "JavaScript / JSX",
+                    "React.js",
+                    "Node.js",
+                    "Github Pages",
+                    "Webpack",
+                    "CSS"
                 ]
             }
         },
@@ -118,21 +139,6 @@
             }
         },
         {
-            "title": "Bouncy Ball",
-            "imgClass": "bouncy-ball",
-            "text": "A class project I created to learn Babylon.js, where the player controls a bouncy ball which can knock around other objects in a room.",
-            "link": "https://cordellbonnieux.github.io/CPSC2130_Lab7/",
-            "list": {
-                "title": "Tech",
-                "items": [
-                    "JavaScript",
-                    "Github Pages",
-                    "Babylon.js",
-                    "HTML"
-                ]
-            }
-        },
-        {
             "title": "Cafe Page",
             "imgClass": "cafe",
             "text": "A fake cafe website I created for fun and I really liked the way it turned out so I decided to share!",
@@ -145,19 +151,6 @@
                     "HTML",
                     "CSS",
                     "Adobe Illustrator"
-                ]
-            }
-        },
-        {
-            "title": "Kitty Generator",
-            "imgClass": "kitty",
-            "text": "A class project, which allows the user to create custom kitties to spawn on a geometric scene.",
-            "link": "https://github.com/cordellbonnieux/CPSC1181_Assignment5",
-            "list": {
-                "title": "Tech",
-                "items": [
-                    "Java",
-                    "JavaFX"
                 ]
             }
         }

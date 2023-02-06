@@ -7,25 +7,22 @@
             "image": ""
         },
         {
-            "title": "Technical Skills & Knowledge",
+            "title": "Languages",
             "list": {
                 "title": "",
                 "items": [
-                    "JavaScript - TypeScript, Node, NPM, Webpack, Parcel, Express, React, Phaser, Babylon, Canvas",
+                    "JavaScript",
+                    "TypeScript",
+                    "Java",
+                    "C++",
+                    "C#",
+                    "Python",
                     "HTML",
-                    "CSS",
-                    "Java - JavaFX",
-                    "Python - PyMongo",
-                    "C# - Unity",
-                    "PHP - WordPress, Drupal",
-                    "NoSQL - MongoDB, Firebase/Firestore, AWS",
+                    "PHP",
                     "JSON",
-                    "MYSQL",
-                    "Windows, Mac, Linux",
+                    "MySQL",
                     "BASH",
-                    "GDscript - Godot",
-                    "Adobe - Photoshop, Illustrator, Premier, Audition",
-                    "GIMP2"
+                    "GDscript"
                 ]
             }
         }
